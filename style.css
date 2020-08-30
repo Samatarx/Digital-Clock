@@ -1,0 +1,34 @@
+  .grid-container {
+    display: grid;
+    background:black;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+      "header header header"
+      "side clock sido"
+      "footer footer footer";
+    margin:10rem;
+    padding:100px;
+    border-radius:20px;
+  }
+  
+  .foota {
+  grid-area:clock;
+    background-color:white;
+    width:100%;
+    text-align:center;
+    justify-items: center;
+    align-content: center;
+    padding-top:120px;
+    font-size: x-large;
+    font-weight: 900;
+    color: navy;
+  }
+  
+  .headera {
+    grid-area: header;
+    color:white;
+    text-align: center;
+    font-size: large;
+    font-weight: 900;
+  }  
