@@ -1,34 +1,75 @@
-  .grid-container {
-    display: grid;
-    background:black;
-    grid-template-columns: 0.5fr 3fr 0.5fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-areas: 
-      "header header header"
-      "side clock sido"
-      "footer footer footer";
-    margin:10rem;
-    padding:100px;
-    border-radius:20px;
+body {
+  background-color: #FAA916;
+  padding: 0;
+  margin: 0;
+  font-family: 'Kufam', cursive;
+}
+
+.main {
+  padding: 10vw;
+}
+
+.centre-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10vw;
+}
+
+.time {
+  font-size: 1.5rem;
+  margin: 1px; 
+  border-radius: 6px;
+  padding: 0;
+  align-content: center;
+  color: WHITE;
+}
+
+.time span {
+  background-color: #69140E;
+  border-radius: 1px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  background-color: #69140E;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 30px;
+  margin-top: 20vw;
+}
+
+@media (min-width:770px) {
+ 
+  body {
+    margin: 0;
+    padding: 0%;
   }
   
-  .foota {
-  grid-area:clock;
-    background-color:white;
-    width:100%;
-    text-align:center;
-    justify-items: center;
-    align-content: center;
-    padding-top:120px;
-    font-size: x-large;
-    font-weight: 900;
-    color: navy;
+  .time {
+    font-size: 3rem;
   }
-  
-  .headera {
-    grid-area: header;
-    color:white;
-    text-align: center;
-    font-size: large;
-    font-weight: 900;
-  }  
+
+  .centre-point {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 1vw 0 0 0;
+    font-size: 3rem;
+  }
+
+  .main {
+    margin: 10vh 10px 0 10px ;
+    padding: 20vh 20vw 0 20vw ;
+    
+  }
+
+  h1 {
+    
+  }
+}
